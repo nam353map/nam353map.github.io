@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCYY备用地址-最新可用入口与防迷路访问指南</title>
+    <meta name="description" content="CCYY备用地址是用户访问CCYY平台的重要通道，提供最新可用的备用入口、域名和访问方法。当主地址失效或无法打开时，通过本页获取有效备用地址，保障顺畅访问体验。" />
+    <meta name="keywords" content="CCYY备用地址,CCYY最新入口,CCYY防迷路,CCYY可用域名,CCYY网址" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background: #f5f7fa;
+            color: #2c3e50;
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            width: 100%;
+        }
+        /* Header */
+        .site-header {
+            background: #1a2a3a;
+            padding: 18px 0;
+            border-bottom: 3px solid #e67e22;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo-icon {
+            background: #e67e22;
+            color: #fff;
+            font-weight: 800;
+            font-size: 22px;
+            width: 46px;
+            height: 46px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            letter-spacing: -1px;
+        }
+        .logo-text {
+            color: #fff;
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        .logo-text small {
+            font-size: 14px;
+            font-weight: 400;
+            color: #bdc3c7;
+            display: block;
+            line-height: 1.2;
+        }
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 5px;
+            flex-wrap: wrap;
+        }
+        .nav-links a {
+            color: #ecf0f1;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-size: 15px;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        .nav-links a:hover,
+        .nav-links a.active {
+            background: #e67e22;
+            color: #fff;
+        }
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, #1a2a3a 0%, #2c3e50 100%);
+            color: #fff;
+            padding: 70px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -40px;
+            left: 0;
+            right: 0;
+            height: 80px;
+            background: #f5f7fa;
+            border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+        }
+        .hero h1 {
+            font-size: 42px;
+            font-weight: 800;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+        .hero h1 span {
+            color: #e67e22;
+        }
+        .hero p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            color: #bdc3c7;
+            opacity: 0.9;
+        }
+        .hero-tag {
+            display: inline-block;
+            background: rgba(230, 126, 34, 0.2);
+            border: 1px solid #e67e22;
+            color: #e67e22;
+            padding: 6px 20px;
+            border-radius: 30px;
+            font-size: 14px;
+            margin: 0 5px 10px;
+            font-weight: 500;
+        }
+        .hero-tag:last-child {
+            margin-bottom: 0;
+        }
+        /* Address Cards */
+        .address-section {
+            padding: 50px 0 40px;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #1a2a3a;
+        }
+        .section-subtitle {
+            text-align: center;
+            color: #7f8c8d;
+            margin-bottom: 40px;
+            font-size: 16px;
+        }
+        .address-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+        .address-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 28px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border-top: 4px solid #e67e22;
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+        }
+        .address-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+        .card-label {
+            display: inline-block;
+            background: #e67e22;
+            color: #fff;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 3px 12px;
+            border-radius: 20px;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+        .card-label.green {
+            background: #27ae60;
+        }
+        .card-label.blue {
+            background: #2980b9;
+        }
+        .card-label.purple {
+            background: #8e44ad;
+        }
+        .address-url {
+            font-size: 20px;
+            font-weight: 700;
+            color: #1a2a3a;
+            margin-bottom: 8px;
+            word-break: break-all;
+            background: #f8f9fa;
+            padding: 10px 15px;
+            border-radius: 8px;
+            border-left: 4px solid #e67e22;
+        }
+        .card-desc {
+            color: #7f8c8d;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        .card-status {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+            color: #27ae60;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        .card-status::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: #27ae60;
+            border-radius: 50%;
+            display: inline-block;
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+        .btn-copy {
+            background: #1a2a3a;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            transition: background 0.3s;
+            width: 100%;
+        }
+        .btn-copy:hover {
+            background: #e67e22;
+        }
+        /* Notice Section */
+        .notice-section {
+            background: #fff8f0;
+            border: 1px solid #f39c12;
+            border-radius: 10px;
+            padding: 25px 30px;
+            margin: 30px 0;
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+        .notice-icon {
+            font-size: 40px;
+            line-height: 1;
+        }
+        .notice-content h3 {
+            color: #e67e22;
+            margin-bottom: 8px;
+            font-size: 20px;
+        }
+        .notice-content p {
+            font-size: 15px;
+            color: #555;
+        }
+        /* Content Section */
+        .content-section {
+            padding: 40px 0;
+        }
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: start;
+        }
+        .content-text h2 {
+            font-size: 26px;
+            margin-bottom: 20px;
+            color: #1a2a3a;
+            position: relative;
+            padding-bottom: 12px;
+        }
+        .content-text h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: #e67e22;
+        }
+        .content-text p {
+            margin-bottom: 16px;
+            color: #555;
+        }
+        .content-list {
+            list-style: none;
+            padding: 0;
+        }
+        .content-list li {
+            padding: 10px 0 10px 28px;
+            position: relative;
+            border-bottom: 1px solid #eee;
+            color: #555;
+        }
+        .content-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #27ae60;
+            font-weight: 700;
+        }
+        /* Step Section */
+        .step-section {
+            background: #fff;
+            padding: 50px 0;
+            border-radius: 0;
+            margin: 20px 0;
+        }
+        .step-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .step-item {
+            text-align: center;
+            padding: 25px 20px;
+            border-radius: 10px;
+            background: #f8f9fa;
+            transition: all 0.3s;
+        }
+        .step-item:hover {
+            background: #fff;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+        .step-num {
+            width: 50px;
+            height: 50px;
+            background: #e67e22;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: 700;
+            margin: 0 auto 15px;
+        }
+        .step-item h3 {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .step-item p {
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+        /* FAQ */
+        .faq-section {
+            padding: 50px 0;
+        }
+        .faq-list {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            background: #fff;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+        .faq-question {
+            padding: 18px 25px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 17px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #1a2a3a;
+            transition: background 0.3s;
+        }
+        .faq-question:hover {
+            background: #f8f9fa;
+        }
+        .faq-question .arrow {
+            transition: transform 0.3s;
+            color: #e67e22;
+            font-size: 20px;
+        }
+        .faq-item.active .arrow {
+            transform: rotate(180deg);
+        }
+        .faq-answer {
+            padding: 0 25px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.4s;
+            color: #555;
+            line-height: 1.8;
+            background: #fafbfc;
+        }
+        .faq-item.active .faq-answer {
+            padding: 0 25px 20px;
+            max-height: 300px;
+        }
+        /* Footer */
+        .site-footer {
+            background: #1a2a3a;
+            color: #bdc3c7;
+            padding: 40px 0 20px;
+            margin-top: 30px;
+        }
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 25px;
+        }
+        .footer-col h4 {
+            color: #fff;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        .footer-col ul {
+            list-style: none;
+        }
+        .footer-col ul li {
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        .footer-col a {
+            color: #bdc3c7;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .footer-col a:hover {
+            color: #e67e22;
+        }
+        .footer-bottom {
+            border-top: 1px solid #34495e;
+            padding-top: 20px;
+            text-align: center;
+            font-size: 13px;
+            color: #7f8c8d;
+        }
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 30px;
+            }
+            .hero p {
+                font-size: 16px;
+            }
+            .header-inner {
+                flex-direction: column;
+                text-align: center;
+            }
+            .nav-links {
+                justify-content: center;
+            }
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+            .address-grid {
+                grid-template-columns: 1fr;
+            }
+            .section-title {
+                font-size: 24px;
+            }
+            .notice-section {
+                flex-direction: column;
+            }
+            .footer-inner {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+            .hero {
+                padding: 50px 0 60px;
+            }
+            .address-url {
+                font-size: 16px;
+            }
+            .card-label {
+                font-size: 11px;
+            }
+        }
+    </style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo-area">
+                <div class="logo-icon">CC</div>
+                <div class="logo-text">
+                    CCYY
+                    <small>备用地址导航</small>
+                </div>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#address">最新地址</a></li>
+                    <li><a href="#guide">使用指南</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <h1>CCYY<span>备用地址</span> 最新入口</h1>
+            <p>当主地址无法访问时，请使用以下备用地址。我们持续更新，确保您始终能够找到可用的CCYY入口。</p>
+            <div>
+                <span class="hero-tag">🚀 稳定访问</span>
+                <span class="hero-tag">🔄 实时更新</span>
+                <span class="hero-tag">🔒 安全入口</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Address -->
+    <section class="address-section" id="address">
+        <div class="container">
+            <h2 class="section-title">当前可用备用地址</h2>
+            <p class="section-subtitle">以下地址均已验证，建议收藏本页面以便随时获取更新</p>
+            
+            <div class="address-grid">
+                <div class="address-card">
+                    <span class="card-label green">推荐入口</span>
+                    <div class="address-url">https://ccyy.example01.com</div>
+                    <p class="card-desc">稳定运行中，速度快，推荐作为首选备用地址使用。</p>
+                    <div class="card-status">已检测 · 当前可用</div>
+                    <button class="btn-copy" onclick="copyText('https://ccyy.example01.com', this)">复制地址</button>
+                </div>
+                <div class="address-card">
+                    <span class="card-label blue">备用入口 2</span>
+                    <div class="address-url">https://ccyy.example02.net</div>
+                    <p class="card-desc">备用域名，适用于主域名被屏蔽时使用。</p>
+                    <div class="card-status">已检测 · 当前可用</div>
+                    <button class="btn-copy" onclick="copyText('https://ccyy.example02.net', this)">复制地址</button>
+                </div>
+                <div class="address-card">
+                    <span class="card-label purple">备用入口 3</span>
+                    <div class="address-url">https://ccyy.example03.org</div>
+                    <p class="card-desc">备用线路，部分地区访问速度更佳。</p>
+                    <div class="card-status">已检测 · 当前可用</div>
+                    <button class="btn-copy" onclick="copyText('https://ccyy.example03.org', this)">复制地址</button>
+                </div>
+            </div>
+
+            <!-- Notice -->
+            <div class="notice-section">
+                <div class="notice-icon">📢</div>
+                <div class="notice-content">
+                    <h3>重要提示</h3>
+                    <p>如果上述地址均无法访问，可能是网络环境或区域限制导致。建议切换网络（如使用移动数据）或稍后再试。本页面会持续更新备用地址，请保持关注并收藏本站。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="content-section" id="guide">
+        <div class="container">
+            <div class="content-grid">
+                <div class="content-text">
+                    <h2>如何正确使用CCYY备用地址</h2>
+                    <p>CCYY平台为用户提供丰富的功能与服务。由于网络环境复杂，主域名有时会遇到访问限制或解析异常。此时，备用地址就是您最可靠的访问通道。</p>
+                    <p>为了获得最佳访问体验，建议您：</p>
+                    <ul class="content-list">
+                        <li>收藏本页面，方便随时查找最新备用地址</li>
+                        <li>优先使用标记为“推荐入口”的地址</li>
+                        <li>若一个地址无法访问，请依次尝试其他备用入口</li>
+                        <li>避免在公共网络环境下保存敏感信息</li>
+                        <li>关注页面更新，获取最新可用的域名信息</li>
+                    </ul>
+                </div>
+                <div class="content-text">
+                    <h2>备用地址常见问题</h2>
+                    <p>很多用户在使用备用地址时会遇到一些疑问，这里为您集中解答：</p>
+                    <ul class="content-list">
+                        <li>备用地址与主地址功能完全一致，数据互通</li>
+                        <li>备用地址的访问速度通常与主地址相当</li>
+                        <li>所有地址均经过安全检测，可放心使用</li>
+                        <li>如遇页面提示错误，请清除浏览器缓存后重试</li>
+                        <li>建议使用Chrome、Edge等现代浏览器访问</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Step Section -->
+    <section class="step-section">
+        <div class="container">
+            <h2 class="section-title">三步快速访问CCYY</h2>
+            <p class="section-subtitle">简单操作，即刻开始使用</p>
+            <div class="step-grid">
+                <div class="step-item">
+                    <div class="step-num">1</div>
+                    <h3>复制地址</h3>
+                    <p>点击上方按钮复制备用地址，或手动输入浏览器地址栏。</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">2</div>
+                    <h3>打开访问</h3>
+                    <p>在浏览器中打开复制的地址，等待页面加载完成。</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">3</div>
+                    <h3>正常使用</h3>
+                    <p>页面加载成功后，您即可正常使用CCYY的全部功能。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <h2 class="section-title">常见问题解答</h2>
+            <p class="section-subtitle">收集了用户最关心的问题，为您一一解答</p>
+            
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        为什么CCYY主地址有时无法访问？
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>主地址无法访问通常由网络运营商限制、DNS解析异常或区域性网络政策导致。这并非CCYY平台本身的问题，使用备用地址即可正常访问。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        备用地址和主地址有什么区别？
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>备用地址与主地址在功能和数据上完全一致，只是域名不同。备用地址是为了在主地址不可用时提供替代访问通道而设立的。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        备用地址会失效吗？多久更新一次？
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>备用地址也可能因网络环境变化而失效。我们会在发现地址失效后尽快更新，建议您定期访问本页面获取最新地址信息。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        使用备用地址是否安全？
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>本页面提供的所有备用地址均经过严格安全检测，确保为CCYY官方域名。您可放心使用，但请勿轻信其他非官方渠道发布的所谓“备用地址”。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        如果所有备用地址都无法访问怎么办？
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>如果所有地址都无法访问，建议您：1) 检查网络连接；2) 尝试切换网络环境；3) 清除浏览器缓存；4) 更换浏览器；5) 稍后重试。我们会在最短时间内更新可用地址。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-col">
+                    <h4>关于本站</h4>
+                    <ul>
+                        <li>本站致力于为用户提供CCYY最新可用的备用地址，帮助用户解决访问问题。</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#">首页</a></li>
+                        <li><a href="#address">最新地址</a></li>
+                        <li><a href="#guide">使用指南</a></li>
+                        <li><a href="#faq">常见问题</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>重要声明</h4>
+                    <ul>
+                        <li>本站仅提供地址导航服务，不承担因网络问题导致的访问失败责任。</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CCYY备用地址导航 · 请收藏本页面以获取最新信息</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ toggle
+        document.querySelectorAll('.faq-question').forEach(function(question) {
+            question.addEventListener('click', function() {
+                var item = this.parentElement;
+                var isActive = item.classList.contains('active');
+                // Close all
+                document.querySelectorAll('.faq-item').forEach(function(faq) {
+                    faq.classList.remove('active');
+                });
+                // Open clicked if was closed
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+
+        // Copy function
+        function copyText(text, btn) {
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(text).then(function() {
+                    btn.textContent = '✅ 已复制';
+                    btn.style.background = '#27ae60';
+                    setTimeout(function() {
+                        btn.textContent = '复制地址';
+                        btn.style.background = '#1a2a3a';
+                    }, 2000);
+                }).catch(function() {
+                    fallbackCopy(text, btn);
+                });
+            } else {
+                fallbackCopy(text, btn);
+            }
+        }
+
+        function fallbackCopy(text, btn) {
+            var textArea = document.createElement('textarea');
+            textArea.value = text;
+            document.body.appendChild(textArea);
+            textArea.select();
+            try {
+                document.execCommand('copy');
+                btn.textContent = '✅ 已复制';
+                btn.style.background = '#27ae60';
+                setTimeout(function() {
+                    btn.textContent = '复制地址';
+                    btn.style.background = '#1a2a3a';
+                }, 2000);
+            } catch (err) {
+                btn.textContent = '复制失败，请手动复制';
+                setTimeout(function() {
+                    btn.textContent = '复制地址';
+                }, 3000);
+            }
+            document.body.removeChild(textArea);
+        }
+    </script>
+</body>
+  </html>
